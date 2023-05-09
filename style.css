@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Chivo+Mono&family=Montserrat&family=Patrick+Hand&family=Roboto:ital,wght@0,400;0,700;1,400&family=Sono&family=Space+Mono&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+canvas {
+    border: 2px solid #30DDCE ;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.toolbox {
+    background-color: #30DDCE ;
+    /* border: 1px soild #FFF85F ; */
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    width: 804px;
+    padding: 1rem;
+}
+
+/* All the irect children of .toolbox */
+.toolbox > * {
+    cursor: pointer;
+    background-color: #FFF85F;
+    border: none;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    font-size: 2rem;
+}
+
+.toolbox > *:last-child {
+    margin-left: auto;
+    width: 100px;
+}
